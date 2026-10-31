@@ -1,0 +1,72 @@
+{
+  "prompt": "One freestanding abandoned park information kiosk with a chunky CRT computer, slanted keyboard shelf, sturdy rectangular pedestal and small overhead canopy. Original early 2000s low polygon game prop. Strong simple silhouette, bevelled edges, large readable forms, muted teal painted metal and warm cream plastic, lightly worn. Screen is dark. No words, no logos, no people, no floor, no surrounding scene. Front faces forward, all pieces connected. Suitable as a small Roblox plaza prop.",
+  "tasks": {
+    "preview": {
+      "id": "01a19374-9080-7770-a3e2-475529e67155",
+      "request": {
+        "mode": "preview",
+        "prompt": "One freestanding abandoned park information kiosk with a chunky CRT computer, slanted keyboard shelf, sturdy rectangular pedestal and small overhead canopy. Original early 2000s low polygon game prop. Strong simple silhouette, bevelled edges, large readable forms, muted teal painted metal and warm cream plastic, lightly worn. Screen is dark. No words, no logos, no people, no floor, no surrounding scene. Front faces forward, all pieces connected. Suitable as a small Roblox plaza prop.",
+        "ai_model": "meshy-6",
+        "should_remesh": true,
+        "topology": "triangle",
+        "target_polycount": 4000,
+        "target_formats": [
+          "glb",
+          "fbx"
+        ]
+      },
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 20,
+      "files": [
+        "preview.bin",
+        "preview.fbx",
+        "preview.glb",
+        "preview.gltf",
+        "preview.png"
+      ]
+    },
+    "refine": {
+      "id": "01a19376-f925-72b6-8c38-3a3a48ca6736",
+      "request": {
+        "mode": "refine",
+        "preview_task_id": "01a19374-9080-7770-a3e2-475529e67155",
+        "enable_pbr": false,
+        "texture_prompt": "Muted teal painted metal, cream CRT bezel, dark glass screen, subtle dirt and chipped edges. No text, no logos. Stylized low-poly retro game prop.",
+        "target_formats": [
+          "glb",
+          "fbx"
+        ]
+      },
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "consumed_credits": 10,
+      "files": [
+        "refine-base-color-0.png",
+        "refine.bin",
+        "refine.fbx",
+        "refine.glb",
+        "refine.gltf",
+        "refine.png"
+      ]
+    }
+  },
+  "balance_before": {
+    "balance": 1100,
+    "monthly_credits": 1100,
+    "permanent_credits": 0,
+    "monthly_resets_at": 1796066106000
+  },
+  "balance_after": {
+    "balance": 1070,
+    "monthly_credits": 1070,
+    "permanent_credits": 0,
+    "monthly_resets_at": 1796066106000
+  },
+  "inspection": {
+    "preview_triangles": 3601,
+    "preview_review": "Recognizable freestanding CRT kiosk with canopy and keyboard shelf; approved for texturing. Studio scale/orientation still pending.",
+    "refine_triangles": 3601,
+    "refine_review": "Inspected downloaded thumbnail: coherent cream/teal CRT kiosk, keyboard and canopy; Studio import and in-game appearance not verified."
+  }
+}

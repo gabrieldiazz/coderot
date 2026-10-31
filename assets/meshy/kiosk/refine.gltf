@@ -1,0 +1,192 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 7949,
+      "type": "VEC3",
+      "max": [
+        0.38904500007629395,
+        0.9479429721832275,
+        0.4081929922103882
+      ],
+      "min": [
+        -0.3901030123233795,
+        -0.9503430128097534,
+        -0.40900200605392456
+      ]
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 7949,
+      "type": "VEC2",
+      "max": [
+        0.9999719858169556,
+        0.9999719858169556
+      ],
+      "min": [
+        2.8000000384054147e-05,
+        0.0015689730644226074
+      ]
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 7949,
+      "type": "VEC3",
+      "max": [
+        1.0,
+        0.9999997615814209,
+        1.0
+      ],
+      "min": [
+        -0.9999994039535522,
+        -1.0,
+        -0.9999988079071045
+      ]
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5125,
+      "normalized": false,
+      "count": 10803,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "pygltflib@v1.16.5",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 43212,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 43212,
+      "byteLength": 95388,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 138600,
+      "byteLength": 63592,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 202192,
+      "byteLength": 95388,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 297580,
+      "byteLength": 3136045
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3433628,
+      "uri": "refine.bin"
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 4
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8,
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 2,
+            "TEXCOORD_0": 1
+          },
+          "indices": 3,
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}
