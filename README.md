@@ -15,3 +15,45 @@ rojo serve
 ```
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
+## Disaster Island prototype (milestone 2)
+
+Geometry and HUD appear in Play/Test mode. The server creates a lobby, island,
+shelter, trees, signage, and cosmetic water under `Workspace.CodeRotRuntime`.
+Round debris is separate from the future corruption director. A red warning
+marks an 8-stud damage radius for 2.5 seconds before debris falls. Exposed players
+take 40 damage; solid overhead cover protects them. Falling into the water
+eliminates players. Every round rebuilds the island and destroys disaster effects.
+The finale is still a timed placeholder, with no valid escape yet.
+
+### Studio acceptance checks
+
+Stop the current test, allow Rojo to sync, then start a fresh test.
+
+1. Solo: verify lobby sign/HUD, island transfer, red markers, falling debris,
+   damage when standing in a marker, and no damage under the shelter roof.
+2. Step off the island: verify elimination. Solo elimination ends the round early.
+3. Server & Clients with two players: reset one character during a round. Verify
+   only that player is eliminated and their camera follows the remaining survivor.
+   The spectator button cycles survivors and supports touch via Activated.
+4. Eliminate everyone: verify early transition and that both players respawn for
+   the next round. Verify health resets and no old warning markers/debris remain.
+5. Join mid-round: verify safe lobby waiting and participation next round. Leave
+   mid-round and during preparation: verify remaining players keep progressing.
+6. Test three consecutive matches; verify only one runtime world, fresh island,
+   no accumulating disaster effects, and correct camera restoration after respawn.
+7. Phone emulation: check HUD readability and spectator button access.
+
+For faster manual iteration, temporarily shorten durations in `src/shared/Config.luau`
+and restore them afterward. Playtest runtime behavior in Studio; a Rojo build
+only validates project assembly.
+
+## Retro plaza and optional Meshy kiosk
+
+The lobby now uses a cohesive cream/teal retro park palette, brick entrance,
+paved courtyard, benches, planters, lamps and an offline information kiosk.
+The former trophy blocks and gold balls are removed. Restart Play after syncing.
+The procedural kiosk works immediately; the generated mesh is an optional import.
+Download `assets/meshy/kiosk-import.zip` from the Codespaces file explorer, extract
+it locally, and follow `assets/meshy/kiosk/README.md`. Its imported Model belongs
+at `ServerStorage.CodeRotAssets.InformationKiosk`; a fresh Play session places it
+automatically. Generated asset provenance and credit usage are in its manifest.
